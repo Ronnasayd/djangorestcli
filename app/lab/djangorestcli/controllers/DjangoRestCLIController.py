@@ -75,7 +75,7 @@ class DjangoRestCLIController(object):
 
     def generateRouterMessage(self):
         print('Add the code below to your urls.py:\n\n')
-        print(self.routerTemplate.format(app_name=self.modelName,
+        print(self.routerTemplate.format(app_name=self.appName,
                                          model_capitalize=self.modelName, model_name=self.modelName.lower()))
 
     def generate(self, args):
